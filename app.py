@@ -163,10 +163,19 @@ def top_banks():
 @app.route("/api/sba_by_state_approvals")
 def fy_state_approvals():
 
-    APP_ROOT = os.path.dirname(os.path.abspath(__file__)) 
-    with open(os.path.join(APP_ROOT, 'us-states-with-loan-data.json')) as json_file:
-        sba_json = json.load(json_file)
+    print('---- TRYING TO OPEN FILE-----------')
+
+    with open('us-states-with-loan-data.json') as json_file:
+        try:
+            sba_json = json.load(json_file)
+        except Exception as e:
+            print('---- ERROR ----')
+            print(e)
         # print(sba_json)
+
+    print('---- OPENED FILE-----------')
+
+    print('---- READY T RETURN -----------')
 
     return sba_json
 
