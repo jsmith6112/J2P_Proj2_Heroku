@@ -18,7 +18,12 @@ from flask import (
 
 from sqlalchemy import func, create_engine
 
+is_heroku = False
+if 'IS_HEROKU' in os.environ:
+    is_heroku = True
+
 # Import your config file(s) and variable(s)
+
 if is_heroku == False:
     from config import remote_db_endpoint, remote_db_port, remote_db_name, remote_db_user, remote_db_pwd
 else:
