@@ -100,7 +100,6 @@ text-align: center;
     font-size: xx-large;
     font-weight: 400;
 }
-<<<<<<< HEAD
 .scroll {
     overflow: scroll!important;
     width: 1000px!important;
@@ -112,23 +111,3 @@ text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
 }
-=======
-
-/************ ABOUT PAGE ***********/
-.p_about_summary {
-  text-indent: 1rem;
-}
-
-.thumbnail_logo {
-  width: 200px 200px;
-}
-
-.space_btw_thumb {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.visual_thumb {
-  margin: 2rem;
-}
->>>>>>> 47f46eddc8ca4dd8eb7b8291b518db9ee09da3de
