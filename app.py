@@ -171,13 +171,13 @@ def fy_state_approvals():
         except Exception as e:
             print('---- ERROR ----')
             print(e)
-        # print(sba_json)
+        print(sba_json)
 
     print('---- OPENED FILE-----------')
 
     print('---- READY T RETURN -----------')
 
-    return sba_json
+    return jsonify(sba_json)
 
 # -------------------------- LOAN Frequency ENDPOINTS -------------------------
 @app.route("/loan_frequency")
